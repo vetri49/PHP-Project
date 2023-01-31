@@ -1,6 +1,6 @@
 <?php
 include 'conn.php';
-$conn=mysqli_connect("localhost","lol","987","jin");
+
 if(isset($_GET['msg'])) {
     $msg = $_GET['msg'];
     echo '<div class="alert alert-success">' . $msg . '</div>';
