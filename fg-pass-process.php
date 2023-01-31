@@ -15,18 +15,18 @@ if(isset($_POST['reset'])) {
     $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
 
 
-    $mail->SMTPDebug = 3;
+    //$mail->SMTPDebug = 3;
     $mail->isSMTP(true);
     $mail->Host = 'smtp.mailtrap.io';
     $mail->SMTPAuth = true;
-    $mail->Username = '0cfadc249f7b7c';
-    $mail->Password = '038db8a0672aa8';
+    $mail->Username = 'username';
+    $mail->Password = 'password';
 
 
     $mail->SMTPSecure = 'tls';
     $mail->Port = 2525;
 
-    $mail->setFrom('vetrivjay86909@gmail.com', 'Admin');
+    $mail->setFrom('Your registered email acc', 'Admin');
     $mail->addAddress($email);
 
 
